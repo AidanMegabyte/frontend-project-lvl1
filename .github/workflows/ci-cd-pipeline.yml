@@ -4,9 +4,12 @@ on: push
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      
+
+      - name: 'install airbnb'
+        run: npm install -g eslint-config-airbnb-base eslint-plugin-import
+
       - name: lint
         run: make lint
