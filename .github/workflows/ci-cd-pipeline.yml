@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
-      - name: 'install airbnb'
-        run: npm install -g eslint-config-airbnb-base eslint-plugin-import
+      - uses: actions/setup-node@v2
+      with:
+        node-version: '14'
 
       - name: lint
         run: make lint
