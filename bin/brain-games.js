@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import { greetUser, readUserName } from '../src/cli.js';
+import { sayWelcome, readUserName, sayHello } from '../src/cli.js';
 
-greetUser();
-readUserName();
+sayWelcome();
+const userName = readUserName();
+sayHello(userName);
