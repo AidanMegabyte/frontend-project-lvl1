@@ -8,3 +8,5 @@
 [![asciicast](https://asciinema.org/a/xi5y2nJDvPjmlQLDozrL7HMgQ.svg)](https://asciinema.org/a/xi5y2nJDvPjmlQLDozrL7HMgQ)
 ### Asciicast brain-calc:
 [![asciicast](https://asciinema.org/a/twMBcvbosQToZOTAZMLmDVQM8.svg)](https://asciinema.org/a/twMBcvbosQToZOTAZMLmDVQM8)
+### Asciicast brain-gcd:
+[![asciicast](https://asciinema.org/a/p0EoghcZELM940uvVK8bhxyNL.svg)](https://asciinema.org/a/p0EoghcZELM940uvVK8bhxyNL)
