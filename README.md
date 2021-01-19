@@ -6,3 +6,5 @@
 [![CI/CD Pipeline](https://github.com/AidanMegabyte/frontend-project-lvl1/workflows/ci-cd-pipeline/badge.svg)](https://github.com/AidanMegabyte/frontend-project-lvl1/actions)
 ### Asciicast brain-even:
 [![asciicast](https://asciinema.org/a/xi5y2nJDvPjmlQLDozrL7HMgQ.svg)](https://asciinema.org/a/xi5y2nJDvPjmlQLDozrL7HMgQ)
+### Asciicast brain-calc:
+[![asciicast](https://asciinema.org/a/twMBcvbosQToZOTAZMLmDVQM8.svg)](https://asciinema.org/a/twMBcvbosQToZOTAZMLmDVQM8)
