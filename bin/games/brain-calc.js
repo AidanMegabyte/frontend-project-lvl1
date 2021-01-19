@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { generateRandomNumber, playGame } from '../src/index.js';
+import { generateRandomNumber, playGame } from '../../src/index.js';
 
 const generateExpression = () => {
   const ops = ['+', '-', '*'];
