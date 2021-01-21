@@ -5,16 +5,16 @@ import {
 
 export const generateRandomNumber = () => (Math.floor(Math.random() * 100)) + 1;
 
-export const playGame = (goalOfGame, generateQuestion, getRightAnswer) => {
+export const playGame = async (goalOfGame, generateQuestion, getRightAnswer) => {
   sayWelcome();
-  const userName = readUserName();
+  const userName = await readUserName();
   sayHello(userName);
   sayGoalOfGame(goalOfGame);
   let rightAnswersQty = 0;
   for (let i = 0; i < 3; i += 1) {
     const question = generateQuestion();
     askQuestion(question);
-    const actualUserAnswer = readUserAnswer();
+    const actualUserAnswer = await readUserAnswer();
     const expectedUserAnswer = getRightAnswer(question);
     if (actualUserAnswer === expectedUserAnswer) {
       sayAnswerIsRight();
