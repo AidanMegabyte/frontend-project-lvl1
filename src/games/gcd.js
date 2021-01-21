@@ -1,14 +1,12 @@
-#!/usr/bin/env node
+import { generateRandomNumber } from '../index.js';
 
-import { generateRandomNumber, playGame } from '../../src/index.js';
-
-const generateNumbersString = () => {
+export const generateNumbersString = () => {
   const numLeft = generateRandomNumber();
   const numRight = generateRandomNumber();
   return `${numLeft} ${numRight}`;
 };
 
-const getGcd = (numbersString) => {
+export const getGcd = (numbersString) => {
   const [numLeft, numRight] = numbersString.split(' ');
   let min = Math.min(numLeft, numRight);
   let max = Math.max(numLeft, numRight);
@@ -24,9 +22,3 @@ const getGcd = (numbersString) => {
     }
   }
 };
-
-playGame(
-  'Find the greatest common divisor of given numbers.',
-  generateNumbersString,
-  getGcd,
-);

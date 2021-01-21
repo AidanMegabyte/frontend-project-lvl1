@@ -1,7 +1,6 @@
-#!/usr/bin/env node
-import { generateRandomNumber, playGame } from '../../src/index.js';
+import { generateRandomNumber } from '../index.js';
 
-const generateExpression = () => {
+export const generateExpression = () => {
   const ops = ['+', '-', '*'];
   const opLeft = generateRandomNumber();
   const opRight = generateRandomNumber();
@@ -9,7 +8,7 @@ const generateExpression = () => {
   return `${opLeft} ${ops[opIndex]} ${opRight}`;
 };
 
-const calculateExpression = (expression) => {
+export const calculateExpression = (expression) => {
   const [opLeft, op, opRight] = expression.split(' ');
   let result;
   if (op === '+') {
@@ -21,9 +20,3 @@ const calculateExpression = (expression) => {
   }
   return String(result);
 };
-
-playGame(
-  'What is the result of the expression?',
-  generateExpression,
-  calculateExpression,
-);

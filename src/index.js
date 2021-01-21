@@ -5,7 +5,9 @@ import {
 
 export const generateRandomNumber = () => (Math.floor(Math.random() * 100)) + 1;
 
-export const playGame = (goalOfGame, generateQuestion, getRightAnswer) => {
+export const getYesNoAnswer = (value) => (value ? 'yes' : 'no');
+
+export const startGame = (goalOfGame, generateQuestion, getRightAnswer) => {
   sayWelcome();
   const userName = readUserName();
   sayHello(userName);
