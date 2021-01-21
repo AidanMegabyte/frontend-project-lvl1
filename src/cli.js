@@ -1,13 +1,10 @@
-import promptly from 'promptly';
+import readlineSync from 'readline-sync';
 
 export const sayWelcome = () => {
   console.log('Welcome to the Brain Games!');
 };
 
-export const readUserName = async () => {
-  const result = await promptly.prompt('May I have your name? ');
-  return result;
-};
+export const readUserName = () => readlineSync.question('May I have your name? ');
 
 export const sayHello = (userName) => {
   console.log(`Hello, ${userName}!`);
@@ -21,10 +18,7 @@ export const askQuestion = (question) => {
   console.log(`Question: ${question}`);
 };
 
-export const readUserAnswer = async () => {
-  const result = await promptly.prompt('Your answer: ');
-  return result;
-};
+export const readUserAnswer = () => readlineSync.question('Your answer: ');
 
 export const sayAnswerIsRight = () => {
   console.log('Correct!');
